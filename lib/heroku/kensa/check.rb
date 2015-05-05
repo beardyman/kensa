@@ -357,7 +357,9 @@ module Heroku
           :callback_url => callback,
           :logplex_token => nil,
           :region => "amazon-web-services::us-east-1",
-          :options => data[:options] || {}
+          :options => data[:options] || {},
+          :name => "walking-slowly-42",
+          :uuid => SecureRandom.uuid
         }
 
         if data[:async]
